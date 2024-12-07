@@ -1,11 +1,10 @@
 # SMU_Bully_Detection_NLP
-Here’s a suggested structure for your README.md file:
 
 SMU Confess Bullying Detection - Sentiment Analysis Project
 
 Project Overview
 
-This project aims to detect targeted bullying remarks in the Telegram group chat SMU Confess using Natural Language Processing (NLP). The model identifies harmful messages using sentiment analysis and flags messages that could be considered bullying. The ultimate goal is to create a safer online space by applying AI-powered text classification.
+This project detects targeted bullying remarks in the Telegram group chat SMU Confess using Natural Language Processing (NLP). The model identifies harmful messages through sentiment analysis and flags messages that could be considered bullying. The goal is to create a safer online space using AI-powered text classification.
 
 Table of Contents
 
@@ -29,7 +28,7 @@ Technologies Used
 	•	Programming Language: Python
 	•	Libraries/Frameworks:
 	•	NLP: Hugging Face Transformers, NLTK, spaCy
-	•	Machine Learning: scikit-learn, TensorFlow/PyTorch
+	•	Machine Learning: scikit-learn, TensorFlow, PyTorch
 	•	Data Handling: Pandas, NumPy
 	•	Web Scraping: Telethon API
 	•	Deployment: Streamlit, Flask, Heroku
@@ -45,8 +44,8 @@ cd SMU_Bully_Detection_NLP
 	2.	Create a virtual environment and activate it:
 
 python -m venv env
-source env/bin/activate  # For Linux/Mac
-env\Scripts\activate  # For Windows
+source env/bin/activate  # Linux/Mac
+env\Scripts\activate  # Windows
 
 
 	3.	Install dependencies:
@@ -71,21 +70,22 @@ SMU_Bully_Detection_NLP/
 
 Model Development
 
-	1.	Data Collection: Extract Telegram chat data using Telethon API.
-	2.	Data Preprocessing: Clean, tokenize, and prepare data.
-	3.	Model Training: Train models like BERT or DistilBERT.
-	4.	Evaluation: Evaluate the model using metrics like accuracy, F1-score, precision, and recall.
+	1.	Data Collection: Extract Telegram chat data using the Telethon API.
+	2.	Data Preprocessing: Clean, tokenize, and prepare the data.
+	3.	Model Training: Train models such as BERT or DistilBERT.
+	4.	Evaluation: Evaluate the model using metrics such as accuracy, F1-score, precision, and recall.
 
 Usage
 
-	•	To run the project locally:
+	•	Run the app locally:
 
 streamlit run app.py
 
 
-	•	Example Command Line Prediction:
+	•	Example command-line prediction:
 
 from transformers import pipeline
+
 sentiment_model = pipeline("sentiment-analysis")
 result = sentiment_model("You are such a loser!")
 print(result)
@@ -102,4 +102,4 @@ Contributions are welcome! If you’d like to help improve this project, please 
 
 License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the LICENSE file for more details.
